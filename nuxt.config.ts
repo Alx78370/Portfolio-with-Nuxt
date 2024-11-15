@@ -9,4 +9,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: ['@primevue/nuxt-module', '@nuxt/icon'],
+  primevue: {
+      /* Configuration */
+  },
 })

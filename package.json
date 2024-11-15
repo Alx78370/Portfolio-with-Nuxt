@@ -10,11 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.7.5",
+    "@primevue/themes": "^4.2.2",
     "nuxt": "^3.14.159",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@primevue/nuxt-module": "^4.2.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "prettier": "^3.3.3",
