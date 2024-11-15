@@ -2,20 +2,29 @@
 import { ref } from 'vue'
 
 const focusedLink = ref('#section1')
+let isScrolling = false
 
 function setFocus(section) {
     focusedLink.value = section
 }
 
 function scrollToSection(sectionId) {
+    setFocus(`#${sectionId}`)
+    isScrolling = true 
+
     const section = document.getElementById(sectionId)
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' })
-        setFocus(`#${sectionId}`)
+
+        setTimeout(() => {
+            isScrolling = false
+        }, 500)
     }
 }
 
 function handleScroll() {
+    if (isScrolling) return
+
     const sections = ['section1', 'section2', 'section3']
     let currentSection = '#section1'
 
@@ -45,9 +54,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#13131361] items-center">
+    <nav class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#1313132d] items-center">
         <a
-            class="group flex flex-col items-center text-xs cursor-pointer"
+            class="flex flex-col items-center text-xs cursor-pointer"
             @click="scrollToSection('section1')"
         >
             <Icon
@@ -60,10 +69,10 @@ onUnmounted(() => {
                 name="material-symbols:other-houses-outline"
                 class="text-5xl text-white"
             />
-            <p class="text-white group-focus:underline group-focus:underline-offset-3">About</p>
+            <p class="text-white">About</p>
         </a>
         <a
-            class="group flex flex-col items-center text-xs cursor-pointer"
+            class="flex flex-col items-center text-xs cursor-pointer"
             @click="scrollToSection('section2')"
         >
             <Icon
@@ -76,10 +85,10 @@ onUnmounted(() => {
                 name="material-symbols:folder-open-outline"
                 class="text-5xl text-white"
             />
-            <p class="text-white group-focus:underline group-focus:underline-offset-3">Works</p>
+            <p class="text-white">Works</p>
         </a>
         <a
-            class="group flex flex-col items-center text-xs cursor-pointer"
+            class="flex flex-col items-center text-xs cursor-pointer"
             @click="scrollToSection('section3')"
         >
             <Icon
@@ -92,7 +101,7 @@ onUnmounted(() => {
                 name="material-symbols:call-outline-sharp"
                 class="text-5xl text-white"
             />
-            <p class="text-white group-focus:underline group-focus:underline-offset-3">Contact</p>
+            <p class="text-white">Contact</p>
         </a>
     </nav>
 </template>
