@@ -7,11 +7,6 @@ function setFocus(section) {
     focusedLink.value = section
 }
 
-function clearFocus() {
-    focusedLink.value = null
-}
-
-
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId)
     if (section) {
