@@ -1,7 +1,7 @@
 <script setup="ts">
 import { ref } from 'vue'
 
-const focusedLink = ref(null)
+const focusedLink = ref('#section1')
 
 function setFocus(section) {
     focusedLink.value = section
@@ -17,7 +17,7 @@ function scrollToSection(sectionId) {
 
 function handleScroll() {
     const sections = ['section1', 'section2', 'section3']
-    let currentSection = null
+    let currentSection = '#section1'
 
     sections.forEach((sectionId) => {
         const section = document.getElementById(sectionId)
@@ -36,6 +36,7 @@ function handleScroll() {
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
 })
 
 onUnmounted(() => {
