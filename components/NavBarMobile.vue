@@ -54,7 +54,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#1313132d] items-center">
+    <nav class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center">
         <a
             class="flex flex-col items-center text-xs cursor-pointer"
             @click="scrollToSection('section1')"
