@@ -1,6 +1,6 @@
 
 <template>
-    <main>
+    <main role="main">
         <slot />
     </main>
     <NavBarMobile />

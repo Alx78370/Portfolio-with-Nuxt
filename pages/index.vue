@@ -1,15 +1,15 @@
-<script setup="ts">
+<script setup lang="ts">
+import About from '~/components/About.vue';
+import WorkCard from '~/components/workCard.vue';
 
 </script>
 
 <template>
-    <section id="section1" class="h-screen py-20 bg-[#171717]">
-        <h1 class="text-[#00DC82] text-4xl text-center">Section 1</h1>
+    <About />
+    <section id="works" class="py-20 px-5 bg-[#212121]">
+        <WorkCard />
     </section>
-    <section id="section2" class="h-screen py-20 bg-[#212121]">
-        <h1 class="text-[#00DC82] text-4xl text-center">Section 2</h1> 
-    </section>
-    <section id="section3" class="h-screen py-20 bg-[#171717]">
-        <h1 class="text-[#00DC82] text-4xl text-center">Section 3</h1>
+    <section id="contact" class="h-screen py-20 bg-[#171717]">
+        <h1 class="text-[#00DC82] text-4xl text-center">Contact</h1>
     </section>
 </template>

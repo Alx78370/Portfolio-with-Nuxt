@@ -8,7 +8,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@primevue/nuxt-module', '@nuxt/icon'],
+  modules: ['@primevue/nuxt-module', '@nuxt/icon', '@formkit/nuxt'],
   primevue: {
   },
+  formkit: {
+    autoImport: true
+  }
 })

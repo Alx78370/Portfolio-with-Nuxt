@@ -1,14 +1,14 @@
-<script setup="ts">
+<script setup lang="ts">
 import { ref } from 'vue'
 
-const focusedLink = ref('#section1')
+const focusedLink = ref('#about')
 let isScrolling = false
 
-function setFocus(section) {
+function setFocus(section: string) {
     focusedLink.value = section
 }
 
-function scrollToSection(sectionId) {
+function scrollToSection(sectionId: string) {
     setFocus(`#${sectionId}`)
     isScrolling = true 
 
@@ -25,8 +25,8 @@ function scrollToSection(sectionId) {
 function handleScroll() {
     if (isScrolling) return
 
-    const sections = ['section1', 'section2', 'section3']
-    let currentSection = '#section1'
+    const sections = ['about', 'works', 'contact']
+    let currentSection = '#about'
 
     sections.forEach((sectionId) => {
         const section = document.getElementById(sectionId)
@@ -54,13 +54,15 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center">
+    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center">
         <a
+            tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('section1')"
+            @click="scrollToSection('about')"
+            @keyup.enter="scrollToSection('about')"
         >
             <Icon
-                v-if="focusedLink === '#section1'"
+                v-if="focusedLink === '#about'"
                 name="material-symbols:other-houses"
                 class="text-5xl text-white"
             />
@@ -72,11 +74,13 @@ onUnmounted(() => {
             <p class="text-white">About</p>
         </a>
         <a
+            tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('section2')"
+            @click="scrollToSection('works')"
+            @keyup.enter="scrollToSection('works')"
         >
             <Icon
-                v-if="focusedLink === '#section2'"
+                v-if="focusedLink === '#works'"
                 name="material-symbols:folder-open"
                 class="text-5xl text-white"
             />
@@ -88,11 +92,13 @@ onUnmounted(() => {
             <p class="text-white">Works</p>
         </a>
         <a
+            tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('section3')"
+            @click="scrollToSection('contact')"
+            @keyup.enter="scrollToSection('contact')"
         >
             <Icon
-                v-if="focusedLink === '#section3'"
+                v-if="focusedLink === '#contact'"
                 name="material-symbols:call-sharp"
                 class="text-5xl text-white"
             />
