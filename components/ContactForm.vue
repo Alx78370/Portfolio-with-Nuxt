@@ -21,7 +21,7 @@ async function sendMail(formData: Message) {
 }
 </script>
 <template>
-  <div class="px-5">
+  <div class="px-5 xl:px-32">
     <FormKit 
       type="form" 
       submit-label="Send message" 

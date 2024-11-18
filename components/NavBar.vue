@@ -54,7 +54,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:right-0 md:inset-y-0 md:bg-transparent md:h-52">
+    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:right-0 md:inset-y-0 md:bg-transparent md:h-52 md:gap-3">
         <a
             tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
@@ -64,12 +64,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#about'"
                 name="material-symbols:other-houses"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <Icon
                 v-else
                 name="material-symbols:other-houses-outline"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <p class="text-white">About</p>
         </a>
@@ -82,12 +82,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#works'"
                 name="material-symbols:folder-open"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <Icon
                 v-else
                 name="material-symbols:folder-open-outline"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <p class="text-white">Works</p>
         </a>
@@ -100,12 +100,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#contact'"
                 name="material-symbols:call-sharp"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <Icon
                 v-else
                 name="material-symbols:call-outline-sharp"
-                class="text-5xl text-white"
+                class="text-5xl text-[#00DC82]"
             />
             <p class="text-white">Contact</p>
         </a>

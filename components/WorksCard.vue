@@ -12,7 +12,7 @@ const works = ref([
   },
   {
     title: "Tech&Co",
-    description: "Tech blog developed using Vite and VueJS. ",
+    description: "Tech blog (contains fake posts for now) developed using Vite and VueJS. ",
     image: TechandCoLogo,
     link: "https://techandco.netlify.app/",
   },
@@ -26,35 +26,27 @@ const works = ref([
 ]);
 </script>
 <template>
-  <div v-for="work in works" :key="work.title">
-    <div v-if="work.link">
-      <NuxtLink :to="work.link" target="_blank">
-        <article
-          class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-10"
+  <div v-for="work in works" :key="work.title" class="xl:px-32">
+    <article class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-10 hover:shadow-[#00DC82] hover:border-2 hover:border-[#00DC82] cursor-pointer">
+      <figure class="lg:w-1/3">
+        <img class="w-full h-full object-fill" :src="work.image" :alt="work.title + ' logo'" />
+      </figure>
+      <div class="card-body lg:w-2/3">
+        <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
+        <p class="text-lg text-slate-200 text-justify">{{ work.description }}</p>
+        <p
+          v-if="work.link === ''"
+          class="text-red-500 text-lg text-justify"
         >
-          <figure>
-            <img :src="work.image" :alt="work.title + ' logo'" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
-            <p class="text-lg text-slate-200">{{ work.description }}</p>
-          </div>
-        </article>
-      </NuxtLink>
-    </div>
-    <div v-else>
-      <article class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-5">
-        <figure>
-          <img :src="work.image" :alt="work.title + ' logo'" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
-          <p class="text-lg text-slate-200 text-justify">{{ work.description }}</p>
-          <p class="text-red-500 text-lg text-justify">
-            The site is not available at the moment.
-          </p>
-        </div>
-      </article>
-    </div>
+          The site is not available at the moment.
+        </p>
+        <p
+          v-else
+          class="invisible"
+        >
+          Placeholder
+        </p>
+      </div>
+    </article>
   </div>
 </template>
