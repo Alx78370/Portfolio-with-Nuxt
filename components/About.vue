@@ -1,5 +1,4 @@
 <template>
-    <section id="about" class="py-12 bg-[#171717] px-5">
 
         <img 
             role="presentation"
@@ -49,5 +48,4 @@
             </p>
         </article>
 
-    </section>
 </template>

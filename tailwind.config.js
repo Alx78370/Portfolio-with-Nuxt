@@ -7,7 +7,9 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./formkit.theme.ts",
   ],
+  darkMode: 'class',
   theme: {
     extend: {},
   },

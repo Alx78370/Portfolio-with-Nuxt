@@ -49,8 +49,8 @@ const works = ref([
         </figure>
         <div class="card-body">
           <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
-          <p class="text-lg text-slate-200">{{ work.description }}</p>
-          <p class="text-red-500 text-lg">
+          <p class="text-lg text-slate-200 text-justify">{{ work.description }}</p>
+          <p class="text-red-500 text-lg text-justify">
             The site is not available at the moment.
           </p>
         </div>
