@@ -54,7 +54,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center">
+    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:right-0 md:inset-y-0 md:bg-transparent md:h-52">
         <a
             tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
