@@ -12,9 +12,8 @@
       class="float-left w-48 h-48 rounded-full object-cover mr-10 md:w-64 md:h-64"
     />
     <div data-aos="fade-left" data-aos-delay="500">
-      <div>
-        <p>Hello, I'm <span class="text-[#00DC82]">Alexis Vachet</span> 👋</p>
-        <br />
+      <div class="pb-5 lg:pb-10">
+        <p class="pb-5 lg:pb-10">Hello, I'm <span class="text-[#00DC82]">Alexis Vachet</span> 👋</p>
         <p>
           A year ago, I set myself the challenge of becoming a
           <span class="text-[#00DC82]">Front-End Developer</span>. After an
@@ -25,14 +24,12 @@
           as a <span class="text-[#00DC82]">Developer</span> 💻.
         </p>
       </div>
-      <br />
-      <p>
+      <p class="pb-5 lg:pb-20">
         You can often find me at various
         <span class="text-[#00DC82]">meetups in Paris</span>, eager to learn
         more and connect with new people 🤝.
       </p>
-      <br />
-      <p>
+      <p class="pb-5 lg:pb-20">
         Feel free to
         <a
           href="#contact"
@@ -44,7 +41,6 @@
         <span class="text-[#00DC82]">project</span> ✨️.
       </p>
     </div>
-    <br />
     <SkillsList />
   </article>
 </template>

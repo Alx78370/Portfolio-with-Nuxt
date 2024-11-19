@@ -47,15 +47,6 @@ function handleScroll() {
 }
 
 onMounted(() => {
-    const validHashes = ['#about', '#works', '#contact']
-    const currentHash = window.location.hash
-
-    if (validHashes.includes(currentHash)) {
-        focusedLink.value = currentHash
-    } else {
-        history.replaceState(null, '', '#about')
-        focusedLink.value = '#about'
-    }
     window.addEventListener('scroll', handleScroll)
     handleScroll()
 })

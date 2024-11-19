@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     autoImport: true
   },
   aos: {
-    disable: 'phone',
+    disable: 'phone, mobile',
     startEvent: 'DOMContentLoaded',
     initClassName: 'aos-init',
     animatedClassName: 'aos-animate',
