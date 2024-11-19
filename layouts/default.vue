@@ -3,6 +3,6 @@
     <main role="main">
         <slot />
     </main>
-    <Footer class="mb-20 md:mb-0" />
+    <Footer class="pb-24 md:pb-5" />
     <NavBar />
 </template>
