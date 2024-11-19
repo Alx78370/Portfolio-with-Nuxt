@@ -12,23 +12,24 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@nuxt/icon',
     '@formkit/nuxt',
-    ['nuxt-mail', {
+    'nuxt-aos',
+    'nuxt-mail'
+  ],
+  runtimeConfig: {
+    mail: {
       message: {
-        to: process.env.NUXT_MAIL_TO,
-        cc: '',
-        bcc: '',
+        to: process.env.MAIL_TO,
       },
       smtp: {
-        host: process.env.NUXT_MAIL_HOST,
-        port: process.env.NUXT_MAIL_PORT,
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
         auth: {
-          user: process.env.NUXT_MAIL_TO,
-          pass: process.env.NUXT_MAIL_PASS,
-        },
-      },
-    }],
-    'nuxt-aos'
-  ],
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        }
+      }
+    }
+  },
   primevue: {
   },
   formkit: {
