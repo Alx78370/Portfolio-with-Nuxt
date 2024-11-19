@@ -6,6 +6,9 @@ let isScrolling = false
 
 function setFocus(section: string) {
     focusedLink.value = section
+    if (window.location.hash !== section) {
+        history.replaceState(null, '', section)
+    }
 }
 
 function scrollToSection(sectionId: string) {
@@ -40,16 +43,26 @@ function handleScroll() {
 
     if (currentSection) {
         setFocus(currentSection)
-    }
+    } 
 }
 
 onMounted(() => {
+    const validHashes = ['#about', '#works', '#contact']
+    const currentHash = window.location.hash
+
+    if (validHashes.includes(currentHash)) {
+        focusedLink.value = currentHash
+    } else {
+        history.replaceState(null, '', '#about')
+        focusedLink.value = '#about'
+    }
     window.addEventListener('scroll', handleScroll)
     handleScroll()
 })
 
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
+    handleScroll()
 })
 </script>
 

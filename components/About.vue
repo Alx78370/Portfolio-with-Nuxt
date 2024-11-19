@@ -1,25 +1,30 @@
-<template>
-  <article class="xl:px-32">
-    <img
-      role="presentation"
-      src="../assets/images/photoAlex.webp"
-      alt="Alexis Vachet photo"
-      style="shape-outside: circle(50%)"
-      class="float-left w-48 h-48 rounded-full object-cover mr-5 md:w-64 md:h-64"
-    />
+<script setup lang="ts"></script>
 
-    <div class="text-white text-xl font-mono text-justify">
-      <p>Hello, I'm <span class="text-[#00DC82]">Alexis Vachet</span> 👋</p>
-      <br />
-      <p>
-        A year ago, I set myself the challenge of becoming a
-        <span class="text-[#00DC82]">Front-End Developer</span>. After an
-        intensive training program at
-        <span class="text-[#00DC82]">DonkeySchool</span> and successfully
-        completing an internship for a new dating site,
-        <span class="text-[#00DC82]">Aurhéa</span>, I'm continuing my journey as
-        a <span class="text-[#00DC82]">Developer</span> 💻.
-      </p>
+<template>
+  <article class="xl:px-32 text-white text-xl font-mono text-justify">
+    <div data-aos="fade-right">
+      <img
+        role="presentation"
+        src="../assets/images/photoAlex.webp"
+        alt="Alexis Vachet photo"
+        style="shape-outside: circle(50%)"
+        class="float-left w-48 h-48 rounded-full object-cover mr-10 md:w-64 md:h-64"
+      />
+
+      <div>
+        <p>Hello, I'm <span class="text-[#00DC82]">Alexis Vachet</span> 👋</p>
+        <br />
+        <p>
+          A year ago, I set myself the challenge of becoming a
+          <span class="text-[#00DC82]">Front-End Developer</span>. After an
+          intensive training program at
+          <span class="text-[#00DC82]">DonkeySchool</span> and successfully
+          completing an internship for a new dating site,
+          <span class="text-[#00DC82]">Aurhéa</span>, I'm continuing my journey
+          as a <span class="text-[#00DC82]">Developer</span> 💻.
+        </p>
+      </div>
+
       <br />
       <p>
         You can often find me at various
@@ -47,19 +52,20 @@
             <p>TailwindCss</p>
           </li>
         </ul>
-      </div>
 
-      <br />
-      <p>
-        Feel free to
-        <a
-          href="#contact"
-          class="text-[#00DC82] cursor-pointer underline underline-offset-2 hover:text-[#00dc8089]"
-          >reach out</a
-        >
-        if you'd like to chat about <span class="text-[#00DC82]">tech</span> or
-        discuss a <span class="text-[#00DC82]">project</span> ✨️.
-      </p>
+        <br />
+        <p>
+          Feel free to
+          <a
+            href="#contact"
+            class="text-[#00DC82] cursor-pointer underline underline-offset-2 hover:text-[#00dc8089]"
+            >reach out</a
+          >
+          if you'd like to chat about
+          <span class="text-[#00DC82]">tech</span> or discuss a
+          <span class="text-[#00DC82]">project</span> ✨️.
+        </p>
+      </div>
     </div>
   </article>
 </template>
