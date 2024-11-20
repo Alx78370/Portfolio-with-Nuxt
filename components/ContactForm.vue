@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Message } from '~/types/Message';
+import { reset } from '@formkit/core'
 
 const mail = useMail()
 const submitted = ref(false)
@@ -13,6 +14,7 @@ async function sendMail(formData: Message) {
       text: message,
     })
     submitted.value = true
+    reset('contact-form')
   } catch (error) {
     console.error('Erreur lors de l\'envoi du message:', error)
   }
@@ -21,12 +23,12 @@ async function sendMail(formData: Message) {
 <template>
   <div class="px-5 xl:px-32">
     <FormKit 
+      id="contact-form"
       data-aos="fade-right"
       type="form" 
       submit-label="Send message" 
       class="space-y-4" 
       @submit="sendMail"
-      :form-class="submitted ? 'hide' : 'show'"
       #default="{ value }"
     >
       <FormKit
