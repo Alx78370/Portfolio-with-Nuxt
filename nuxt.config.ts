@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       title: 'alexis-vachet',
       htmlAttrs: { lang: 'en' },
       meta: [
-        { hid: 'description', name: 'description', content: 'Alexis Vachet - Développeur web' },
+        { hid: 'description', name: 'description', content: 'Portfolio - Développeur front-end - Alexis Vachet' },
         { hid: 'author', name: 'author', content: 'Alexis Vachet' },
       ],
     }
