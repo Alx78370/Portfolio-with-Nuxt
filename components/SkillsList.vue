@@ -13,28 +13,31 @@
         />
         <p class="text-sm md:text-lg">TypeScript</p>
       </li>
-      <li class="flex flex-col items-center">
-        <Icon
-          data-aos="flip-right"
-          data-aos-delay="1600"
-          name="mdi:vuejs"
-          class="text-4xl md:text-6xl text-[#00DC82]"
-        />
+      <li
+        data-aos="flip-right"
+        data-aos-delay="1600"
+        class="flex flex-col items-center"
+      >
+        <Icon name="mdi:vuejs" class="text-4xl md:text-6xl text-[#00DC82]" />
         <p class="text-sm md:text-lg">VueJS</p>
       </li>
-      <li class="flex flex-col items-center">
+      <li
+        data-aos="flip-right"
+        data-aos-delay="1700"
+        class="flex flex-col items-center"
+      >
         <Icon
-          data-aos="flip-right"
-          data-aos-delay="1700"
           name="devicon-plain:nuxtjs"
           class="text-4xl md:text-6xl text-[#00DC82]"
         />
         <p class="text-sm md:text-lg">Nuxt</p>
       </li>
-      <li class="flex flex-col items-center">
+      <li
+        data-aos="flip-right"
+        data-aos-delay="1800"
+        class="flex flex-col items-center"
+      >
         <Icon
-          data-aos="flip-right"
-          data-aos-delay="1800"
           name="simple-icons:tailwindcss"
           class="text-4xl md:text-6xl text-[#00DC82]"
         />
