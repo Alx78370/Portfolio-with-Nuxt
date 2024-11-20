@@ -8,7 +8,7 @@ const works = ref([
     description:
       "Dating site developed using Angular and Symfony. Still under development.",
     image: AurheaLogo,
-    link: "",
+    link: "http://www.aurhea.com/",
   },
   {
     title: "Tech&Co",
@@ -22,13 +22,13 @@ const works = ref([
     description:
       "Showcase website for a craftsman/painter developed with WordPress.",
     image: DBdecorationLogo,
-    link: "",
+    link: "https://dbdecoration.fr/",
   },
 ]);
 </script>
 <template>
   <div v-for="work in works" :key="work.title" class="xl:px-32">
-    <NuxtLink :to="work.link" :target="work.link ? '_blank' : null">
+    <NuxtLink :to="work.link" target="_blank">
       <article
         class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-10 hover:shadow-[#00DC82] hover:border-2 hover:border-[#00DC82] cursor-pointer"
         data-aos="flip-up"
@@ -45,10 +45,6 @@ const works = ref([
           <p class="text-lg text-slate-200 text-justify">
             {{ work.description }}
           </p>
-          <p v-if="work.link === ''" class="text-red-500 text-lg text-justify">
-            The site is not available at the moment.
-          </p>
-          <p v-else class="invisible">Placeholder</p>
         </div>
       </article>
     </NuxtLink>
