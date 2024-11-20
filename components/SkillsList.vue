@@ -9,7 +9,7 @@
       >
         <Icon
           name="hugeicons:typescript-01"
-          class="text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
         />
         <p>TypeScript</p>
       </li>
@@ -18,7 +18,7 @@
           data-aos="flip-right"
           data-aos-delay="1600"
           name="mdi:vuejs"
-          class="text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
         />
         <p>VueJS</p>
       </li>
@@ -27,7 +27,7 @@
           data-aos="flip-right"
           data-aos-delay="1700"
           name="devicon-plain:nuxtjs"
-          class="text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
         />
         <p>Nuxt</p>
       </li>
@@ -36,7 +36,7 @@
           data-aos="flip-right"
           data-aos-delay="1800"
           name="simple-icons:tailwindcss"
-          class="text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
         />
         <p>TailwindCss</p>
       </li>
