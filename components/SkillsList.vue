@@ -9,36 +9,36 @@
       >
         <Icon
           name="hugeicons:typescript-01"
-          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82]"
         />
-        <p>TypeScript</p>
+        <p class="text-sm md:text-lg">TypeScript</p>
       </li>
       <li class="flex flex-col items-center">
         <Icon
           data-aos="flip-right"
           data-aos-delay="1600"
           name="mdi:vuejs"
-          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82]"
         />
-        <p>VueJS</p>
+        <p class="text-sm md:text-lg">VueJS</p>
       </li>
       <li class="flex flex-col items-center">
         <Icon
           data-aos="flip-right"
           data-aos-delay="1700"
           name="devicon-plain:nuxtjs"
-          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82]"
         />
-        <p>Nuxt</p>
+        <p class="text-sm md:text-lg">Nuxt</p>
       </li>
       <li class="flex flex-col items-center">
         <Icon
           data-aos="flip-right"
           data-aos-delay="1800"
           name="simple-icons:tailwindcss"
-          class="text-4xl md:text-6xl text-[#00DC82] hover:text-white"
+          class="text-4xl md:text-6xl text-[#00DC82]"
         />
-        <p>TailwindCss</p>
+        <p class="text-sm md:text-lg">Tailwind</p>
       </li>
     </ul>
   </div>
