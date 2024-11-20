@@ -60,9 +60,10 @@ onUnmounted(() => {
 <template>
     <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:right-0 md:inset-y-0 md:bg-transparent md:h-52 md:gap-3">
         <a
+            href="#about"
             tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('about')"
+            @click.prevent="scrollToSection('about')"
             @keyup.enter="scrollToSection('about')"
         >
             <Icon
@@ -78,9 +79,10 @@ onUnmounted(() => {
             <p class="text-white">About</p>
         </a>
         <a
+            href="#works"
             tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('works')"
+            @click.prevent="scrollToSection('works')"
             @keyup.enter="scrollToSection('works')"
         >
             <Icon
@@ -96,9 +98,10 @@ onUnmounted(() => {
             <p class="text-white">Works</p>
         </a>
         <a
+            href="#contact"
             tabindex="0"
             class="flex flex-col items-center text-xs cursor-pointer"
-            @click="scrollToSection('contact')"
+            @click.prevent="scrollToSection('contact')"
             @keyup.enter="scrollToSection('contact')"
         >
             <Icon
