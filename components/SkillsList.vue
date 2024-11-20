@@ -1,10 +1,10 @@
 <template>
-  <div class="xl:mt-5" data-aos="fade-up" data-aos-delay="1000">
+  <div class="xl:mt-5" data-aos="fade-up">
     <p>My favorite technologies include:</p>
     <ul class="flex flex-row mt-5 lg:mt-10 justify-between gap-3">
       <li
         data-aos="flip-right"
-        data-aos-delay="1500"
+        data-aos-delay="100"
         class="flex flex-col items-center"
       >
         <Icon
@@ -15,7 +15,7 @@
       </li>
       <li
         data-aos="flip-right"
-        data-aos-delay="1600"
+        data-aos-delay="200"
         class="flex flex-col items-center"
       >
         <Icon name="mdi:vuejs" class="text-4xl md:text-6xl text-[#00DC82]" />
@@ -23,7 +23,7 @@
       </li>
       <li
         data-aos="flip-right"
-        data-aos-delay="1700"
+        data-aos-delay="300"
         class="flex flex-col items-center"
       >
         <Icon
@@ -34,7 +34,7 @@
       </li>
       <li
         data-aos="flip-right"
-        data-aos-delay="1800"
+        data-aos-delay="400"
         class="flex flex-col items-center"
       >
         <Icon
