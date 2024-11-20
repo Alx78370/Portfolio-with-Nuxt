@@ -18,14 +18,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     mail: {
       message: {
-        to: process.env.MAIL_TO,
+        to: process.env.NUXT_MAIL_TO,
       },
       smtp: {
-        host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
+        host: process.env.NUXT_SMTP_HOST,
+        port: process.env.NUXT_SMTP_PORT,
         auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
+          user: process.env.NUXT_MAIL_USER,
+          pass: process.env.NUXT_MAIL_PASS,
         }
       }
     }

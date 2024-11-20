@@ -1,19 +1,14 @@
 <script setup lang="ts">
 import type { Message } from '~/types/Message';
 
-const { mail } = useMail()
+const mail = useMail()
 const submitted = ref(false)
-
-if (!mail) {
-  console.error('Le module nuxt-mail n\'est pas correctement initialisé');
-}
 
 async function sendMail(formData: Message) {
   const { email, subject, message } = formData
-  console.log('Sending email:', formData)
   try {
     await mail.send({
-      from: email,
+      to: email,
       subject: subject,
       text: message,
     })
