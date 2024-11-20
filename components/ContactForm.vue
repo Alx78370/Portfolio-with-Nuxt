@@ -21,6 +21,7 @@ async function sendMail(formData: Message) {
 <template>
   <div class="px-5 xl:px-32">
     <FormKit 
+      data-aos="fade-right"
       type="form" 
       submit-label="Send message" 
       class="space-y-4" 
@@ -34,6 +35,7 @@ async function sendMail(formData: Message) {
         name="email"
         validation="required|email"
         placeholder="email@example.com"
+        validation-visibility="dirty"
       />
       <FormKit
         type="text"
@@ -41,6 +43,7 @@ async function sendMail(formData: Message) {
         name="subject"
         validation="required"
         placeholder="Subject"
+        validation-visibility="dirty"
       />
       <FormKit
         type="textarea"
@@ -48,16 +51,12 @@ async function sendMail(formData: Message) {
         name="message"
         validation="required"
         placeholder="Message"
+        validation-visibility="dirty"
       />
     </FormKit>
     <div v-if="submitted">
       <p class="text-md text-green-500">
         Email sent successfully!
-      </p>
-    </div>
-    <div v-else>
-      <p class="text-md text-red-400">
-        An error occurred while sending the email.
       </p>
     </div>
   </div>
