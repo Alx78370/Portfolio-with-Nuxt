@@ -73,3 +73,5 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c6b04f5-062c-4d37-a7fb-486728516bdb/deploy-status)](https://app.netlify.com/sites/alexis-vachet/deploys)
