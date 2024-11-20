@@ -9,6 +9,9 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: 'Portfolio - Développeur front-end - Alexis Vachet' },
         { hid: 'author', name: 'author', content: 'Alexis Vachet' },
       ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      ]
     }
   },
   css: ['~/assets/css/main.css'],
