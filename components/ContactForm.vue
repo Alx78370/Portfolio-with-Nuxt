@@ -51,14 +51,14 @@ async function sendMail(formData: Message) {
       />
     </FormKit>
     <div v-if="submitted">
-      <h2 class="text-md text-green-500">
+      <p class="text-md text-green-500">
         Email sent successfully!
-      </h2>
+      </p>
     </div>
     <div v-else>
-      <h2 class="text-md text-red-500">
+      <p class="text-md text-red-400">
         An error occurred while sending the email.
-      </h2>
+      </p>
     </div>
   </div>
 </template>

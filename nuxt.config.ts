@@ -4,12 +4,13 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'alexis-vachet',
+      htmlAttrs: { lang: 'en' },
       meta: [
         { hid: 'description', name: 'description', content: 'Alexis Vachet - Développeur web' },
         { hid: 'author', name: 'author', content: 'Alexis Vachet' },
       ],
     }
-  }
+  },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },

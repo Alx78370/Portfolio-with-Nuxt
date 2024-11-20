@@ -5,9 +5,8 @@
     <img
       data-aos="fade-right"
       data-aos-delay="500"
-      role="presentation"
       src="../assets/images/photoAlex.webp"
-      alt="Alexis Vachet photo"
+      alt=""
       style="shape-outside: circle(50%)"
       class="float-left w-48 h-48 rounded-full object-cover mr-10 md:w-64 md:h-64"
     />

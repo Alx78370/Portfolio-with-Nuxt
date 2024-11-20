@@ -1020,7 +1020,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
     "bg-emerald-600": true,
-    "!text-white": true,
+    "!text-black": true,
     "active:text-emerald-100": true,
     "active:bg-emerald-700": true,
     "hover:bg-emerald-700": true,
