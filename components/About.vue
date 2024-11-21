@@ -20,7 +20,7 @@ const { t } = useI18n();
         </p>
       </div>
       <p class="pb-5 lg:pb-20" v-html="t('meetups')"></p>
-      <p class="pb-5 lg:pb-10" v-html="t('contact')"></p>
+      <p class="pb-5 lg:pb-20" v-html="t('contact')"></p>
     </div>
     <SkillsList />
   </article>
