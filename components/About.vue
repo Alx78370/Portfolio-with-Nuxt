@@ -10,7 +10,7 @@ const { t } = useI18n();
       data-aos="fade-right"
       src="../assets/images/photoAlex.webp"
       alt=""
-      style="shape-outside: circle(50%)"
+      style="shape-outside: circle(50%); object-position: top"
       class="float-left w-48 h-48 rounded-full object-cover mr-10 md:w-64 md:h-64"
     />
     <div data-aos="fade-left">
