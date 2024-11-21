@@ -32,7 +32,7 @@ const { t } = useI18n();
     <p data-aos="fade-right" class="px-5 xl:px-32 font-mono text-xl text-white mb-5">
       {{ t('questions') }}
     </p>
-    <ContactForm class="mb-10" />
+    <ContactForm class="mb-20" />
     <Socials />
   </section>
 </template>
