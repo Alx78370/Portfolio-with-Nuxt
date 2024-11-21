@@ -56,7 +56,7 @@ export default defineNuxtConfig({
     disableMutationObserver: false,
     debounceDelay: 50,
     throttleDelay: 99,
-    offset: 200,
+    offset: 20,
     duration: 800,
     easing: 'ease', 
 
