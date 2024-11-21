@@ -20,7 +20,11 @@ const flags = {
 </script>
 
 <template>
-    <button class="flex flex-col items-center gap-1 absolute md:fixed top-16 right-5 md:top-60 md:right-5" @click="toggleLocale" tabindex="0" :aria-label="t('ariaLabel.toggleLang')">
+    <button 
+        class="flex flex-col items-center gap-1 absolute md:fixed top-16 right-5 md:top-60 md:right-5 z-10" 
+        @click="toggleLocale" 
+        tabindex="0" 
+        :aria-label="t('ariaLabel.toggleLang')">
         <Icon
             :name="locale === 'en' ? flags.en.icon || flags.en.text : flags.fr.icon || flags.fr.text"
             class="w-10 h-10 hover:border-2 hover:border-[#00DC82] rounded-full"
