@@ -30,7 +30,7 @@ const works = computed(() =>[
   <div v-for="work in works" :key="work.title" class="xl:px-32">
     <NuxtLink :to="work.link" target="_blank">
       <article
-        class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-10 hover:shadow-[#00DC82] hover:border-2 hover:border-[#00DC82] cursor-pointer"
+        class="card lg:card-side bg-[#171717] shadow-xl font-mono mb-10 hover:shadow-darkgreen hover:border-2 hover:border-darkgreen cursor-pointer"
         data-aos="flip-up"
       >
         <figure class="lg:w-1/3">
@@ -41,7 +41,7 @@ const works = computed(() =>[
           />
         </figure>
         <div class="card-body lg:w-2/3">
-          <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
+          <h2 class="card-title text-xl text-green">{{ work.title }}</h2>
           <p class="text-lg text-slate-200">
             {{ work.description }}
           </p>

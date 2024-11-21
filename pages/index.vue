@@ -12,7 +12,7 @@ const { t } = useI18n();
     id="about"
     class="py-12 lg:py-20 md:h-screen bg-[#171717] px-5 sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
-    <h1 class="text-[#00DC82] text-6xl text-center mb-20" data-aos="fade-down">
+    <h1 class="text-green text-6xl text-center mb-20" data-aos="fade-down">
       {{ t('about')}}
     </h1>
     <About />
@@ -21,14 +21,14 @@ const { t } = useI18n();
     id="works"
     class="py-12 md:h-screen px-5 bg-[#212121] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
-    <h1 class="text-[#00DC82] text-6xl text-center mb-20" data-aos="fade-down">Portfolio</h1>
+    <h1 class="text-green text-6xl text-center mb-20" data-aos="fade-down">Portfolio</h1>
     <WorksCard />
   </section>
   <section
     id="contact"
     class="pt-12 md:h-screen pb-10 lg:py-40 bg-[#171717] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
-    <h1 class="text-[#00DC82] text-6xl text-center mb-20" data-aos="fade-down">Contact</h1>
+    <h1 class="text-green text-6xl text-center mb-20" data-aos="fade-down">Contact</h1>
     <p data-aos="fade-right" class="px-5 xl:px-32 font-mono text-xl text-white mb-5">
       {{ t('questions') }}
     </p>

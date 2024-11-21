@@ -7,7 +7,7 @@
     >
       <Icon
         name="fa-brands:linkedin"
-        class="text-4xl md:text-5xl text-white xl:text-5xl hover:text-[#00DC82]"
+        class="text-4xl md:text-5xl text-white xl:text-5xl hover:text-green"
       />
     </NuxtLink>
     <NuxtLink
@@ -17,7 +17,7 @@
     >
       <Icon
         name="fa-brands:github"
-        class="text-4xl md:text-5xl text-white xl:text-5xl hover:text-[#00DC82]"
+        class="text-4xl md:text-5xl text-white xl:text-5xl hover:text-green"
       />
     </NuxtLink>
   </div>

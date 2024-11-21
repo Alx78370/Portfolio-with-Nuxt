@@ -11,7 +11,12 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'green': '#00DC82',
+        'darkgreen': '#00A66B',
+      }
+    },
     screens: {
       sm: '480px',
       md: '768px',

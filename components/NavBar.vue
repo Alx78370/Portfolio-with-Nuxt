@@ -71,12 +71,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#about'"
                 name="material-symbols:other-houses"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <Icon
                 v-else
                 name="material-symbols:other-houses-outline"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <p class="text-white">{{ t('about') }}</p>
         </a>
@@ -90,12 +90,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#works'"
                 name="material-symbols:folder-open"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <Icon
                 v-else
                 name="material-symbols:folder-open-outline"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <p class="text-white">Portfolio</p>
         </a>
@@ -109,12 +109,12 @@ onUnmounted(() => {
             <Icon
                 v-if="focusedLink === '#contact'"
                 name="material-symbols:call-sharp"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <Icon
                 v-else
                 name="material-symbols:call-outline-sharp"
-                class="text-3xl md:text-5xl text-[#00DC82]"
+                class="text-3xl md:text-5xl text-green"
             />
             <p class="text-white">Contact</p>
         </a>
