@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <article class="xl:px-32 text-white text-xl font-mono text-justify">
+  <article class="xl:px-32 text-white text-xl font-mono">
     <img
       data-aos="fade-right"
       src="../assets/images/photoAlex.webp"

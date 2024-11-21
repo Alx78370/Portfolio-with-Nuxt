@@ -42,7 +42,7 @@ const works = computed(() =>[
         </figure>
         <div class="card-body lg:w-2/3">
           <h2 class="card-title text-xl text-[#00DC82]">{{ work.title }}</h2>
-          <p class="text-lg text-slate-200 text-justify">
+          <p class="text-lg text-slate-200">
             {{ work.description }}
           </p>
         </div>
