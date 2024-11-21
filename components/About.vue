@@ -10,8 +10,8 @@ const { t } = useI18n();
       data-aos="fade-right"
       src="../assets/images/photoAlex.webp"
       alt=""
-      style="shape-outside: circle(50%); object-position: top"
-      class="float-left w-48 h-48 rounded-full object-cover mr-10 md:w-64 md:h-64"
+      style="object-position: top"
+      class="float-left w-36 h-48 rounded-3xl object-cover mr-5 mb-5 md:mr-10 md:mb-10 md:w-64 md:h-72"
     />
     <div data-aos="fade-left">
       <div class="pb-5 lg:pb-10">
@@ -28,7 +28,7 @@ const { t } = useI18n();
           {{ t("year.suffix") }}
         </p>
       </div>
-      <p class="pb-5 lg:pb-20">
+      <p class="pb-5 lg:pb-10">
         {{ t("meetups.prefix") }}
         <span class="text-[#00DC82]">{{ t("meetups.highlight") }}</span
         >,
