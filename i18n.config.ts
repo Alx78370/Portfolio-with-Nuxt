@@ -5,27 +5,21 @@ export default defineI18nConfig(() => ({
       en: {
         about: 'About',
         hello: 'Hello, I\'m',
-        year: `A year ago, I set myself the challenge of becoming a
-        <span class="text-[#00DC82]">Front-End Developer</span>. After an
-        intensive training program at
-        <span class="text-[#00DC82]">DonkeySchool</span> and successfully
-        completing an internship for a new dating site,
-        <span class="text-[#00DC82]">Aurhéa</span>, I'm continuing my journey
-        as a <span class="text-[#00DC82]">Developer</span> 💻.`,
-        meetups: `
-        You can often find me at various
-        <span class="text-[#00DC82]">meetups in Paris</span>, eager to learn
-        more and connect with new people 🤝.`,
-        contact: `
-        Feel free to
-        <a
-            href="#contact"
-            class="text-[#00DC82] cursor-pointer underline underline-offset-2 hover:text-[#00dc8089]"
-        >reach out</a>
-        if you'd like to chat about
-        <span class="text-[#00DC82]">tech</span> or discuss a
-        <span class="text-[#00DC82]">project</span> ✨️.
-        `,
+        year: {
+          prefix: 'A year ago, I set myself the challenge of becoming a',
+          highlight: 'Front-End Developer',
+          training: 'After an intensive training program at',
+          internship: 'DonkeySchool',
+          suffix: 'and successfully completing an internship for a new dating site, Aurhéa, I\'m continuing my journey as a Developer 💻.',
+        },        
+        meetups: {
+          prefix: 'You can often find me at various',
+          highlight: 'meetups in Paris',
+          suffix: 'eager to learn more and connect with new people 🤝.',
+        },        
+        contactPrefix: 'Feel free to',
+        contactLink: 'reach out',
+        contactSuffix: `if you'd like to chat about tech or discuss a project ✨️.`,
         favtech: 'My favorite technologies include:',
         works: {
             aurhea: {
@@ -63,27 +57,21 @@ export default defineI18nConfig(() => ({
       fr: {
         about: 'À propos',
         hello: 'Bonjour, je m\'appelle',
-        year: `Il y a un an, je me suis lancé le défi de devenir
-        <span class="text-[#00DC82]">Développeur Front-End</span>. Après une
-        formation intensive à
-        <span class="text-[#00DC82]">DonkeySchool</span> et un stage réussi pour
-        un nouveau site de rencontres,
-        <span class="text-[#00DC82]">Aurhéa</span>, je poursuis mon parcours en
-        tant que <span class="text-[#00DC82]">Développeur</span> 💻.`,
-        meetups: `
-        Vous pouvez souvent me trouver à divers
-        <span class="text-[#00DC82]">meetups à Paris</span>, toujours curieux
-        d'apprendre et de rencontrer de nouvelles personnes 🤝.`,
-        contact: `
-        N'hésitez pas à
-        <a
-          href="#contact"
-          class="text-[#00DC82] cursor-pointer underline underline-offset-2 hover:text-[#00dc8089]"
-        >me contacter</a>
-        si vous souhaitez discuter
-        <span class="text-[#00DC82]">tech</span> ou échanger sur un
-        <span class="text-[#00DC82]">projet</span> ✨️.
-        `,
+        year: {
+          prefix: 'Il y a un an, je me suis lancé le défi de devenir',
+          highlight: 'Développeur Front-End',
+          training: 'Après une formation intensive à',
+          internship: 'DonkeySchool',
+          suffix: 'et un stage réussi pour un nouveau site de rencontres, Aurhéa, je poursuis mon parcours en tant que Développeur 💻.',
+        },        
+        meetups: {
+          prefix: 'Vous pouvez souvent me trouver à divers',
+          highlight: 'meetups à Paris',
+          suffix: 'toujours curieux d\'apprendre et de rencontrer de nouvelles personnes 🤝.',
+        },
+        contactPrefix: 'N\'hésitez pas à',
+        contactLink: 'me contacter',
+        contactSuffix: `si vous souhaitez discuter de tech ou échanger sur un projet ✨️.`,
         favtech: 'Mes technologies préférées incluent :',
         works: {
             aurhea: {
