@@ -42,6 +42,7 @@ export default defineI18nConfig(() => ({
             subjectPlaceholder: 'Subject',
             messageLabel: 'Message',
             messagePlaceholder: 'Message',
+            emailSent: 'Email sent successfully!',
             sendButton: 'Send message',
             validation: {
               required: 'This field is required',
@@ -94,6 +95,7 @@ export default defineI18nConfig(() => ({
             subjectPlaceholder: 'Objet',
             messageLabel: 'Message',
             messagePlaceholder: 'Votre message',
+            emailSent: 'E-mail envoyé avec succès !',
             sendButton: 'Envoyer le message',
             validation: {
               required: 'Ce champ est obligatoire',
