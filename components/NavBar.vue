@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 const focusedLink = ref('#about')
 let isScrolling = false
 
@@ -58,7 +60,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:right-0 md:inset-y-0 md:bg-transparent md:h-52 md:gap-3">
+    <nav role="navigation" class="flex fixed bottom-0 justify-between px-12 w-screen py-2 bg-[#171717ac] items-center md:flex-col md:w-24 md:px-4 md:right-0 md:inset-y-0 md:bg-transparent md:h-52 md:gap-3">
         <a
             href="#about"
             tabindex="0"
@@ -76,7 +78,7 @@ onUnmounted(() => {
                 name="material-symbols:other-houses-outline"
                 class="text-5xl text-[#00DC82]"
             />
-            <p class="text-white">About</p>
+            <p class="text-white">{{ t('about') }}</p>
         </a>
         <a
             href="#works"
@@ -95,7 +97,7 @@ onUnmounted(() => {
                 name="material-symbols:folder-open-outline"
                 class="text-5xl text-[#00DC82]"
             />
-            <p class="text-white">Works</p>
+            <p class="text-white">Portfolio</p>
         </a>
         <a
             href="#contact"

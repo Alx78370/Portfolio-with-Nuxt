@@ -1,6 +1,12 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
+
 <template>
   <div class="xl:mt-5" data-aos="fade-up">
-    <p>My favorite technologies include:</p>
+    <p>{{ t('favtech') }}</p>
     <ul class="flex flex-row mt-5 lg:mt-10 justify-between gap-3">
       <li
         data-aos="flip-right"

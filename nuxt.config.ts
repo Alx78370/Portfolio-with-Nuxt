@@ -23,13 +23,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@primevue/nuxt-module',
-    '@nuxt/icon',
-    '@formkit/nuxt',
-    'nuxt-aos',
-    'nuxt-mail'
-  ],
+  modules: ['@primevue/nuxt-module', '@nuxt/icon', '@formkit/nuxt', 'nuxt-aos', 'nuxt-mail', '@nuxtjs/i18n'],
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
   runtimeConfig: {
     mail: {
       message: {

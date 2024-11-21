@@ -1,9 +1,15 @@
 <script setup lang="ts">
 import type { Message } from '~/types/Message';
 import { reset } from '@formkit/core'
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 const mail = useMail()
 const submitted = ref(false)
+const validationMessages = ref({
+  required: () => t('form.validation.required'),
+  email: () => t('form.validation.email'),
+});
 
 async function sendMail(formData: Message) {
   const { email, subject, message } = formData
@@ -22,43 +28,46 @@ async function sendMail(formData: Message) {
 </script>
 <template>
   <div class="px-5 xl:px-32">
-    <FormKit 
+    <FormKit
       id="contact-form"
       data-aos="fade-right"
-      type="form" 
-      submit-label="Send message" 
-      class="space-y-4" 
+      type="form"
+      :submit-label="t('form.sendButton')"
+      class="space-y-4"
       @submit="sendMail"
       #default="{ value }"
     >
       <FormKit
         type="email"
-        label="Email"
+        :label="t('form.emailLabel')"
         name="email"
         validation="required|email"
-        placeholder="email@example.com"
+        placeholder="john.doe@gmail.com"
         validation-visibility="dirty"
+        :validation-messages="validationMessages"
       />
       <FormKit
         type="text"
-        label="Subject"
+        :label="t('form.subjectLabel')"
         name="subject"
         validation="required"
-        placeholder="Subject"
+        :placeholder="t('form.subjectPlaceholder')"
         validation-visibility="dirty"
+        :validation-messages="validationMessages"
       />
       <FormKit
         type="textarea"
-        label="Message"
+        :label="t('form.messageLabel')"
         name="message"
         validation="required"
-        placeholder="Message"
+        :placeholder="t('form.messagePlaceholder')"
         validation-visibility="dirty"
+        :validation-messages="validationMessages"
       />
     </FormKit>
     <div v-if="submitted">
       <p class="text-md text-green-500">
-        Email sent successfully!
+        {{ t('form.emailSent') }}
       </p>
     </div>
   </div>

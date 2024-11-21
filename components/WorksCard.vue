@@ -2,25 +2,25 @@
 import AurheaLogo from "../assets/images/Aurhea-logo.webp";
 import TechandCoLogo from "../assets/images/TechandCo-logo.webp";
 import DBdecorationLogo from "../assets/images/DB-decoration-logo.webp";
-const works = ref([
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+const works = computed(() =>[
   {
     title: "Aurhea",
-    description:
-      "Dating site developed using Angular and Symfony. Still under development.",
+    description: t("works.aurhea.description"),
     image: AurheaLogo,
     link: "http://www.aurhea.com/",
   },
   {
     title: "Tech&Co",
-    description:
-      "Tech blog (contains fake posts for now) developed using Vite and VueJS. ",
+    description: t("works.techandco.description"),
     image: TechandCoLogo,
     link: "https://techandco.netlify.app/",
   },
   {
     title: "DB decoration",
-    description:
-      "Showcase website for a craftsman/painter developed with WordPress.",
+    description: t("works.dbdecoration.description"),
     image: DBdecorationLogo,
     link: "https://dbdecoration.fr/",
   },
