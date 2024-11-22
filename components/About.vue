@@ -6,14 +6,14 @@ const { t } = useI18n();
 
 <template>
   <article class="xl:px-56 text-white text-xl font-mono">
-    <div class="flex gap-10">
+    <div class="flex flex-col-reverse md:flex-row gap-10">
       <div class="flex flex-col min-w-fit">
         <img
           data-aos="fade-right"
           src="../assets/images/photoAlex.webp"
           alt=""
           style="object-position: top"
-          class="float-left w-36 h-48 rounded-3xl object-cover mb-5 md:w-80 md:h-96"
+          class="w-fit rounded-3xl object-cover mb-5 md:w-80 md:h-96"
         />
         <SkillsList />
       </div>
