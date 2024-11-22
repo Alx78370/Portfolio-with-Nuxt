@@ -3,20 +3,10 @@ export default defineI18nConfig(() => ({
     locale: 'en',
     messages: {
       en: {
+        developer: 'Front-End Developer',
         about: 'About',
         hello: 'Hello, I\'m',
-        year: {
-          prefix: 'A year ago, I set myself the challenge of becoming a',
-          highlight: 'Front-End Developer',
-          training: 'After an intensive training program at',
-          internship: 'DonkeySchool',
-          suffix: 'and successfully completing an internship for a new dating site, Aurhéa, I\'m continuing my journey as a Developer 💻.',
-        },        
-        meetups: {
-          prefix: 'You can often find me at various',
-          highlight: 'meetups in Paris',
-          suffix: 'eager to learn more and connect with new people 🤝.',
-        },        
+        challenge: 'A year ago, I took on the challenge of becoming a Front-End Developer. After training at DonkeySchool and completing a successful internship at Aurhéa, I’m continuing my journey. You’ll often find me at Paris meetups, eager to learn and connect!',       
         contactPrefix: 'Feel free to',
         contactLink: 'reach out',
         contactSuffix: `if you'd like to chat about tech or discuss a project ✨️.`,
@@ -56,20 +46,9 @@ export default defineI18nConfig(() => ({
         
       },
       fr: {
+        developer: 'Développeur Front-End',
         about: 'À propos',
-        hello: 'Bonjour, je m\'appelle',
-        year: {
-          prefix: 'Il y a un an, je me suis lancé le défi de devenir',
-          highlight: 'Développeur Front-End',
-          training: 'Après une formation intensive à',
-          internship: 'DonkeySchool',
-          suffix: 'et un stage réussi pour un nouveau site de rencontres, Aurhéa, je poursuis mon parcours en tant que Développeur 💻.',
-        },        
-        meetups: {
-          prefix: 'Vous pouvez souvent me trouver à divers',
-          highlight: 'meetups à Paris',
-          suffix: 'toujours curieux d\'apprendre et de rencontrer de nouvelles personnes 🤝.',
-        },
+        challenge: 'Il y a un an, j’ai relevé le défi de devenir Développeur Front-End. Après une formation à DonkeySchool et un stage réussi chez Aurhéa, je poursuis mon parcours. Vous me croiserez souvent à des meetups parisiens, prêt à apprendre et à échanger !',
         contactPrefix: 'N\'hésitez pas à',
         contactLink: 'me contacter',
         contactSuffix: `si vous souhaitez discuter de tech ou échanger sur un projet ✨️.`,
