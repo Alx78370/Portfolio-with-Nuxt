@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <article class="xl:px-32 text-white text-xl font-mono">
+  <article class="xl:px-32 text-white text-xl">
     <div class="flex flex-col-reverse md:flex-row gap-10">
       <div class="flex flex-col min-w-fit">
         <img
@@ -18,14 +18,14 @@ const { t } = useI18n();
         <SkillsList />
       </div>
       <div data-aos="fade-left">
-        <p class="pb-5 lg:pb-32">
+        <p class="pb-5 md:text-2xl lg:pb-20">
           {{ t("challenge") }}
         </p>
-        <p class="pb-5">
+        <p class="pb-5 md:text-2xl">
           {{ t("contactPrefix") }}
           <a
             href="#contact"
-            class="text-green cursor-pointer underline underline-offset-2 hover:text-darkgreen"
+            class="text-green md:text-2xl cursor-pointer underline underline-offset-2 hover:text-darkgreen"
           >
             {{ t("contactLink") }}
           </a>

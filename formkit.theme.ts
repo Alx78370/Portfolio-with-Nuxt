@@ -1021,6 +1021,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "group-data-[has-overlay]:selection:!text-transparent": true,
     "bg-emerald-600": true,
     "!text-black": true,
+    "!text-xl": true,
     "active:text-emerald-100": true,
     "active:bg-emerald-700": true,
     "hover:bg-emerald-700": true,
@@ -1093,7 +1094,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "dark:group-data-[disabled]:bg-neutral-800/5": true,
     "dark:group-data-[invalid]:border-red-500": true,
     "dark:group-data-[invalid]:ring-red-500": true,
-    "dark:bg-transparent": true
+    "dark:bg-transparent": true,
   },
   "textarea__input": {
     "appearance-none": true,
@@ -1118,7 +1119,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "dark:text-neutral-300": true,
     "p-0": true,
     "border-none": true,
-    "focus:ring-0": true
+    "focus:ring-0": true,
   },
   "textarea__prefixIcon": {
     "flex": true,
@@ -1267,7 +1268,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "text-lg": true,
     "text-neutral-700": true,
     "selection:bg-emerald-100": true,
-    "font-mono": true,
+    "font-roboto": true,
     "inline-block": true,
     "ml-2": true,
     "mr-1.5": true,
@@ -3226,7 +3227,7 @@ const classes: Record<string, Record<string, boolean>> = {
   "multi-step__badge": {
     "bg-red-600": true,
     "absolute": true,
-    "font-mono": true,
+    "font-roboto": true,
     "font-bold": true,
     "flex": true,
     "items-center": true,
@@ -3304,7 +3305,8 @@ const globals: Record<string, Record<string, boolean>> = {
     "text-base": true,
     "font-bold": true,
     "mb-1": true,
-    "dark:text-neutral-300": true
+    "dark:text-neutral-300": true,
+    "text-xl": true
   },
   "legend": {
     "block": true,

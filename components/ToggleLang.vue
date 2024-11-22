@@ -29,7 +29,7 @@ const flags = {
             :name="locale === 'en' ? flags.en.icon || flags.en.text : flags.fr.icon || flags.fr.text"
             class="w-6 h-6 md:w-10 md:h-10 hover:border-2 hover:border-green rounded-full"
         />
-        <p class="text-xs text-white font-mono md:w-14">
+        <p class="text-xs text-white md:w-14">
             {{ locale === 'en' ? flags.en.text : flags.fr.text }}
         </p>
     </button>

@@ -15,7 +15,10 @@ export default {
       colors: {
         'green': '#00DC82',
         'darkgreen': '#00A66B',
-      }
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
     screens: {
       sm: '480px',

@@ -14,7 +14,7 @@ const { t } = useI18n();
       >
         <Icon
           name="hugeicons:typescript-01"
-          class="text-4xl md:text-3xl text-green"
+          class="text-4xl md:text-5xl text-green"
         />
         <p class="text-sm">TypeScript</p>
       </li>
@@ -23,7 +23,7 @@ const { t } = useI18n();
         data-aos-delay="200"
         class="flex flex-col items-center"
       >
-        <Icon name="mdi:vuejs" class="text-4xl md:text-3xl text-green" />
+        <Icon name="mdi:vuejs" class="text-4xl md:text-5xl text-green" />
         <p class="text-sm">VueJS</p>
       </li>
       <li
@@ -33,7 +33,7 @@ const { t } = useI18n();
       >
         <Icon
           name="devicon-plain:nuxtjs"
-          class="text-4xl md:text-3xl text-green"
+          class="text-4xl md:text-5xl text-green"
         />
         <p class="text-sm">Nuxt</p>
       </li>
@@ -44,7 +44,7 @@ const { t } = useI18n();
       >
         <Icon
           name="simple-icons:tailwindcss"
-          class="text-4xl md:text-3xl text-green"
+          class="text-4xl md:text-5xl text-green"
         />
         <p class="text-sm">Tailwind</p>
       </li>
