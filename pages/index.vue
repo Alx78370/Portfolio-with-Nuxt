@@ -10,11 +10,18 @@ const { t } = useI18n();
 <template>
   <section
     id="about"
-    class="py-12 lg:py-20 md:h-screen bg-[#171717] px-5 sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
+    class="py-12 lg:py-20 md:h-screen bg-[#171717] px-5 sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-84"
   >
-    <h1 class="text-green text-6xl text-center mb-20" data-aos="fade-down">
-      {{ t('about')}}
+  <div class="flex flex-col justify-start px-56 mb-20 w-full font-mono" data-aos="fade-down">
+    <h1 class="text-green text-8xl" >
+      {{ t('developer')}}
+      
     </h1>
+    <p class="text-white text-6xl">
+      Alexis Vachet
+    </p>
+  </div>
+    
     <About />
   </section>
   <section
