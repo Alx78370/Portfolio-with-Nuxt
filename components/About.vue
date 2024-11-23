@@ -17,7 +17,7 @@ const { t } = useI18n();
         />
         <SkillsList />
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="fade-down">
         <p class="pb-5 md:text-2xl lg:pb-20">
           {{ t("challenge") }}
         </p>
