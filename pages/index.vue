@@ -39,7 +39,7 @@ onUnmounted(() => {
       <LottieAnimation
         tabindex="0"
         :aria-label="t('ariaLabel.scrollToPortfolio')"
-        animationPath="https://lottie.host/e2fa6652-8b2a-4ee6-9e4f-9f1ff75c4210/sWquAIUqWR.json"
+        animationPath="/lottieAnimations/arrow-down.json"
         :loop="true"
         :autoplay="true"
         class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
@@ -75,7 +75,7 @@ onUnmounted(() => {
       <LottieAnimation
         tabindex="0"
         :aria-label="t('ariaLabel.scrollToContact')"
-        animationPath="https://lottie.host/e2fa6652-8b2a-4ee6-9e4f-9f1ff75c4210/sWquAIUqWR.json"
+        animationPath="/lottieAnimations/arrow-down.json"
         :loop="true"
         :autoplay="true"
         class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
@@ -118,7 +118,7 @@ onUnmounted(() => {
     <LottieAnimation
       tabindex="0"
       :aria-label="t('ariaLabel.scrollToTop')"
-      animationPath="https://lottie.host/e2fa6652-8b2a-4ee6-9e4f-9f1ff75c4210/sWquAIUqWR.json"
+      animationPath="/lottieAnimations/arrow-down.json"
       :loop="true"
       :autoplay="true"
       class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
