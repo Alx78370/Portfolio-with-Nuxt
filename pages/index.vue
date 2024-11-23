@@ -42,7 +42,7 @@ onUnmounted(() => {
         animationPath="/lottieAnimations/arrow-down.json"
         :loop="true"
         :autoplay="true"
-        class="w-10 cursor-pointer transition-transform duration-100 group-hover:scale-125"
+        class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
         @click="
           () => {
             scrollTo('#works');
@@ -78,7 +78,7 @@ onUnmounted(() => {
         animationPath="/lottieAnimations/arrow-down.json"
         :loop="true"
         :autoplay="true"
-        class="w-10 cursor-pointer transition-transform duration-100 group-hover:scale-125"
+        class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
         @click="
           () => {
             scrollTo('#contact');
@@ -121,7 +121,7 @@ onUnmounted(() => {
       animationPath="/lottieAnimations/arrow-down.json"
       :loop="true"
       :autoplay="true"
-      class="w-10 cursor-pointer transition-transform duration-100 group-hover:scale-125"
+      class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
       @click="
         () => {
           scrollTo('#about');

@@ -63,5 +63,5 @@ onBeforeUnmount(() => {
 
 
 <template>
-  <div ref="animationContainer" class="flex justify-center items-center w-full h-full"></div>
+  <div ref="animationContainer" class="flex justify-center items-center w-32 h-32"></div>
 </template>
