@@ -3,7 +3,7 @@ import AurheaLogo from "../assets/images/Aurhea-logo.webp";
 import TechandCoLogo from "../assets/images/TechandCo-logo.webp";
 import DBdecorationLogo from "../assets/images/DB-decoration-logo.webp";
 import { useI18n } from "vue-i18n";
-import type { Work } from "~/types/work";
+import type { Work } from "~/types/Work";
 
 const { t } = useI18n();
 const works = computed<Work[]>(() => [
@@ -42,10 +42,11 @@ const works = computed<Work[]>(() => [
               :alt="work.title + ' logo'"
             />
           </figure>
-          <div class="card-body lg:w-2/3">
+          <div class="card-body lg:w-2/3 lg:px-24">
             <h2 class="card-title text-xl md:text-3xl text-green font-mono">
               {{ work.title }}
             </h2>
+            <hr>
             <p class="text-lg md:text-2xl text-slate-200">
               {{ work.description }}
             </p>
