@@ -3,9 +3,10 @@ import AurheaLogo from "../assets/images/Aurhea-logo.webp";
 import TechandCoLogo from "../assets/images/TechandCo-logo.webp";
 import DBdecorationLogo from "../assets/images/DB-decoration-logo.webp";
 import { useI18n } from 'vue-i18n';
+import type { Work } from "~/types/work";
 
 const { t } = useI18n();
-const works = computed(() =>[
+const works = computed<Work[]>(() =>[
   {
     title: "Aurhea",
     description: t("works.aurhea.description"),
@@ -27,7 +28,7 @@ const works = computed(() =>[
 ]);
 </script>
 <template>
-  <div v-for="work in works" :key="work.title" class="xl:px-32">
+  <div v-for="(work, index) in works" :key="index" class="xl:px-32">
     <NuxtLink :to="work.link" target="_blank">
       <article
         class="card lg:card-side bg-[#171717] shadow-xl mb-10 hover:shadow-darkgreen hover:border-2 hover:border-darkgreen cursor-pointer"

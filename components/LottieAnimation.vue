@@ -22,6 +22,18 @@ const props = defineProps({
 
 let animationInstance: AnimationItem | null = null;
 
+const stopAutoplay = () => {
+  if (animationInstance) {
+    animationInstance.pause();
+  }
+};
+
+const startAutoplay = () => {
+  if (animationInstance) {
+    animationInstance.play();
+  }
+};
+
 onMounted(() => {
   if (animationContainer.value) {
     animationInstance = lottie.loadAnimation({
@@ -31,6 +43,9 @@ onMounted(() => {
       autoplay: props.autoplay,
       path: props.animationPath,
     });
+
+    animationContainer.value.addEventListener("mouseover", stopAutoplay);
+    animationContainer.value.addEventListener("mouseleave", startAutoplay);
   }
 });
 
@@ -38,8 +53,14 @@ onBeforeUnmount(() => {
   if (animationInstance) {
     animationInstance.destroy();
   }
+
+  if (animationContainer.value) {
+    animationContainer.value.removeEventListener("mouseover", stopAutoplay);
+    animationContainer.value.removeEventListener("mouseleave", startAutoplay);
+  }
 });
 </script>
+
 
 <template>
   <div ref="animationContainer" class="flex justify-center items-center w-full h-full"></div>

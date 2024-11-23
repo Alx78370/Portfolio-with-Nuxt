@@ -1,18 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-import { useNavigation } from "~/composables/useNavigation";
 
 const { t } = useI18n();
-const { focusedLink, scrollTo, setFocus, startListening, stopListening } =
-  useNavigation(["about", "works", "contact"]);
-
-  onMounted(() => {
-  startListening();
-});
-
-onUnmounted(() => {
-  stopListening();
-});
 </script>
 
 <template>
@@ -57,16 +46,6 @@ onUnmounted(() => {
           {{ t("contactSuffix") }}
         </p>
       </div>
-    </div>
-    <div class="hidden md:flex justify-center items-center group">
-      <LottieAnimation
-      animationPath="https://lottie.host/e2fa6652-8b2a-4ee6-9e4f-9f1ff75c4210/sWquAIUqWR.json"
-      :loop="true"
-      :autoplay="true"
-      class="w-32 cursor-pointer"
-      @click="() => { scrollTo('#works'); setFocus('#works'); }"
-      @keyup.enter="() => { scrollTo('#works'); setFocus('#works'); }"
-    />
     </div>
   </article>
 </template>
