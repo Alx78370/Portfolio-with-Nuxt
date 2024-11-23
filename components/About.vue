@@ -19,7 +19,21 @@ const { t } = useI18n();
       </div>
       <div data-aos="fade-down">
         <p class="pb-5 md:text-2xl lg:pb-20">
-          {{ t("challenge") }}
+          {{ t("challenge.part1") }}
+          <span class="whitespace-nowrap">
+            <span class="text-green">{{ t("challenge.highlight1") }}</span>
+          </span>.
+          {{ t("challenge.part2") }}
+          <span class="text-green">{{ t("challenge.highlight2") }}</span>
+          {{ t("challenge.part3") }}
+          <span class="whitespace-nowrap">
+            <span class="text-green">{{ t("challenge.highlight3") }}</span>
+          </span>,
+          {{ t("challenge.part4") }}
+          <span class="whitespace-nowrap">
+            <span class="text-green">{{ t("challenge.highlight4") }}</span>
+          </span>,
+          {{ t("challenge.part5") }}
         </p>
         <p class="pb-5 md:text-2xl">
           {{ t("contactPrefix") }}

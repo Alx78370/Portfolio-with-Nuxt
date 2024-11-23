@@ -6,7 +6,17 @@ export default defineI18nConfig(() => ({
         developer: 'Front-End Developer',
         about: 'About',
         hello: 'Hello, I\'m',
-        challenge: 'A year ago, I took on the challenge of becoming a Front-End Developer. After training at DonkeySchool and completing a successful internship at Aurhéa, I’m continuing my journey. You’ll often find me at Paris meetups, eager to learn and connect!',       
+        challenge: {
+          part1: 'A year ago, I took on the challenge of becoming a ',
+          highlight1: 'Front-End Developer',
+          part2: 'After training at ',
+          highlight2: 'DonkeySchool',
+          part3: ' and completing a successful internship at ',
+          highlight3: 'Aurhéa',
+          part4: 'I’m continuing my journey. You’ll often find me at ',
+          highlight4: 'Paris meetups',
+          part5: 'eager to learn and connect!'
+        },    
         contactPrefix: 'Feel free to',
         contactLink: 'reach out',
         contactSuffix: `if you'd like to chat about tech or discuss a project.`,
@@ -48,7 +58,17 @@ export default defineI18nConfig(() => ({
       fr: {
         developer: 'Développeur Front-End',
         about: 'À propos',
-        challenge: 'Il y a un an, j’ai relevé le défi de devenir Développeur Front-End. Après une formation à DonkeySchool et un stage réussi chez Aurhéa, je poursuis mon parcours. Vous me croiserez souvent à des meetups parisiens, prêt à apprendre et à échanger !',
+        challenge: {
+          part1: 'Il y a un an, j’ai relevé le défi de devenir ',
+          highlight1: 'Développeur Front-End',
+          part2: 'Après une formation à ',
+          highlight2: 'DonkeySchool',
+          part3: ' et un stage réussi chez ',
+          highlight3: 'Aurhéa',
+          part4: 'je poursuis mon parcours. Vous me croiserez souvent à des ',
+          highlight4: 'meetups parisiens',
+          part5: 'prêt à apprendre et à échanger !'
+        },
         contactPrefix: 'N\'hésitez pas à',
         contactLink: 'me contacter',
         contactSuffix: `si vous souhaitez discuter de tech ou échanger sur un projet.`,
