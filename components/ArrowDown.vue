@@ -1,9 +1,0 @@
-<template>
-  <client-only>
-    <Vue3Lottie
-      animationLink="https://lottie.host/1f7df648-d7aa-49bb-845e-f74b2988b5bd/kqx4hX1Ue2.lottie"
-      :height="200"
-      :width="200"
-    />
-  </client-only>
-</template>

@@ -22,7 +22,6 @@ const { t } = useI18n();
       <p class="text-white text-3xl md:text-7xl font-mono">Alexis Vachet</p>
     </div>
     <About />
-    <ArrowDown />
   </section>
   <section
     id="works"
