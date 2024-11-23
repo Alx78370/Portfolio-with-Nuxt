@@ -52,6 +52,11 @@ export default defineI18nConfig(() => ({
         dev: 'Developped with Nuxt 3',
         ariaLabel: {
             toggleLang: 'Toggle language',
+            scrollToTop: 'Scroll to top',
+            scrollToPortfolio: 'Scroll to portfolio',
+            scrollToContact: 'Scroll to contact',
+            github: 'View GitHub profile',
+            linkedin: 'View my LinkedIn profile',
         }
         
       },
@@ -104,6 +109,11 @@ export default defineI18nConfig(() => ({
         dev: 'Développé avec Nuxt 3',
         ariaLabel: {
             toggleLang: 'Changer de langue',
+            scrollToTop: 'Remonter en haut de la page',
+            scrollToPortfolio: 'Aller au portfolio',
+            scrollToContact: 'Aller au formulaire de contact',
+            github: 'Voir profil GitHub',
+            linkedin: 'Voir mon profil LinkedIn',
         }
       }
     }
