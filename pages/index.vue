@@ -113,7 +113,7 @@ onUnmounted(() => {
     <ContactForm class="mb-20" />
     <Socials />
     <div
-    class="hidden md:flex justify-center items-center group absolute -right-6 bottom-0 rotate-180"
+    class="hidden md:flex md:justify-center md:items-center group md:absolute md:right-0 md:bottom-0 md:rotate-180 md:box-content"
   >
     <LottieAnimation
       tabindex="0"
@@ -121,7 +121,7 @@ onUnmounted(() => {
       animationPath="/lottieAnimations/arrow-down.json"
       :loop="true"
       :autoplay="true"
-      class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
+      class="cursor-pointer transition-transform duration-100 group-hover:scale-125"
       @click="
         () => {
           scrollTo('#about');
