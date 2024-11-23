@@ -9,7 +9,7 @@ export default defineI18nConfig(() => ({
         challenge: 'A year ago, I took on the challenge of becoming a Front-End Developer. After training at DonkeySchool and completing a successful internship at Aurhéa, I’m continuing my journey. You’ll often find me at Paris meetups, eager to learn and connect!',       
         contactPrefix: 'Feel free to',
         contactLink: 'reach out',
-        contactSuffix: `if you'd like to chat about tech or discuss a project ✨️.`,
+        contactSuffix: `if you'd like to chat about tech or discuss a project.`,
         favtech: 'My favorite technologies include:',
         works: {
             aurhea: {
@@ -25,7 +25,7 @@ export default defineI18nConfig(() => ({
                 "Showcase website for a craftsman/painter developed with WordPress.",
             },
         },
-        questions: 'Got questions? Feel free to reach out using this form or connect with me on my social media 💬.',
+        questions: 'Got questions? Feel free to reach out using this form or connect with me on my social media.',
         form: {
             emailLabel: 'Email',
             subjectLabel: 'Subject',
@@ -51,7 +51,7 @@ export default defineI18nConfig(() => ({
         challenge: 'Il y a un an, j’ai relevé le défi de devenir Développeur Front-End. Après une formation à DonkeySchool et un stage réussi chez Aurhéa, je poursuis mon parcours. Vous me croiserez souvent à des meetups parisiens, prêt à apprendre et à échanger !',
         contactPrefix: 'N\'hésitez pas à',
         contactLink: 'me contacter',
-        contactSuffix: `si vous souhaitez discuter de tech ou échanger sur un projet ✨️.`,
+        contactSuffix: `si vous souhaitez discuter de tech ou échanger sur un projet.`,
         favtech: 'Mes technologies préférées incluent :',
         works: {
             aurhea: {
@@ -67,7 +67,7 @@ export default defineI18nConfig(() => ({
                 "Site vitrine pour un artisan/peintre développé avec WordPress.",
             },
         },
-        questions: 'Des questions ? N\'hésitez pas à me contacter via ce formulaire ou à me rejoindre sur mes réseaux sociaux 💬.',
+        questions: 'Des questions ? N\'hésitez pas à me contacter via ce formulaire ou à me rejoindre sur mes réseaux sociaux.',
         form: {
             emailLabel: 'E-mail',
             subjectLabel: 'Objet',
