@@ -21,7 +21,7 @@ onUnmounted(() => {
 <template>
   <section
     id="about"
-    class="relative py-16 lg:py-20 md:h-screen bg-[#171717] px-5 sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
+    class="relative py-16 lg:py-20 md:h-screen bg-white dark:bg-[#171717] px-5 sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
     <div
       class="flex flex-col justify-center md:justify-start md:pl-32 mb-20 xl:mb-32 w-full"
@@ -30,7 +30,7 @@ onUnmounted(() => {
       <h1 class="text-green text-5xl md:text-8xl font-mono">
         {{ t("developer") }}
       </h1>
-      <p class="text-white text-3xl md:text-7xl font-mono">Alexis Vachet</p>
+      <p class="text-black dark:text-white text-3xl md:text-7xl font-mono">Alexis Vachet</p>
     </div>
     <About />
     <div
@@ -60,7 +60,7 @@ onUnmounted(() => {
   </section>
   <section
     id="works"
-    class="relative py-12 px-5 bg-[#212121] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
+    class="relative py-12 px-5 bg-[#F9F9F9] dark:bg-[#212121] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
     <h1
       class="text-green text-5xl text-center mb-10 font-mono"
@@ -96,7 +96,7 @@ onUnmounted(() => {
   </section>
   <section
     id="contact"
-    class="relative pt-12 md:h-screen pb-10 lg:py-40 bg-[#171717] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
+    class="relative pt-12 md:h-screen pb-10 lg:py-40 bg-white dark:bg-[#171717] sm:px-12 md:px-32 lg:px-40 xl:px-54 xxl:px-96"
   >
     <h1
       class="text-green text-5xl text-center mb-20 font-mono"
@@ -106,7 +106,7 @@ onUnmounted(() => {
     </h1>
     <p
       data-aos="fade-right"
-      class="px-5 xl:px-32 text-xl md:text-2xl text-white mb-5"
+      class="px-5 xl:px-32 text-xl md:text-2xl text-black dark:text-white mb-5"
     >
       {{ t("questions") }}
     </p>

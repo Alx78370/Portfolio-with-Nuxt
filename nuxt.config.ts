@@ -23,7 +23,21 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@primevue/nuxt-module', '@nuxt/icon', '@formkit/nuxt', 'nuxt-aos', 'nuxt-mail', '@nuxtjs/i18n', '@nuxt/fonts'],
+  modules: [
+    '@primevue/nuxt-module',
+    '@nuxt/icon',
+    '@formkit/nuxt',
+    'nuxt-aos',
+    'nuxt-mail',
+    '@nuxtjs/i18n',
+    '@nuxt/fonts',
+    '@nuxtjs/color-mode'
+  ],
+  colorMode: {
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'light',
+  },
   i18n: {
     vueI18n: './i18n.config.ts'
   },

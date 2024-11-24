@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <article class="xl:px-32 text-white text-xl">
+  <article class="xl:px-32 text-black dark:text-white text-xl">
     <div class="flex flex-col-reverse md:flex-row gap-10">
       <div class="flex flex-col min-w-fit">
         <img

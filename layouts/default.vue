@@ -5,6 +5,7 @@
     <header>
         <NavBar />
         <ToggleLang />
+        <ToggleDarkMode />
     </header>
     <main role="main">
         <slot />

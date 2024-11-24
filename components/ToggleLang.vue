@@ -21,7 +21,7 @@ const flags = {
 
 <template>
     <button 
-        class="absolute md:fixed top-5 right-7 md:top-60 md:right-7 z-10" 
+        class="absolute md:fixed top-5 right-7 md:top-[245px] md:right-7 z-10" 
         @click="toggleLocale" 
         tabindex="0" 
         :aria-label="t('ariaLabel.toggleLang')">

@@ -13,6 +13,7 @@
     "@formkit/nuxt": "^1.6.9",
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.7.5",
+    "@nuxtjs/color-mode": "^3.5.2",
     "@primevue/themes": "^4.2.2",
     "lottie-web": "^5.12.2",
     "nuxt": "^3.14.159",

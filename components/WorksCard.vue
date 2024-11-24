@@ -28,16 +28,16 @@ const works = computed<Work[]>(() => [
 ]);
 </script>
 <template>
-  <div class="md:py-14">
+  <div class="md:pb-14">
     <div v-for="(work, index) in works" :key="index" class="xl:px-32">
       <NuxtLink :to="work.link" target="_blank">
         <article
-          class="card lg:card-side bg-[#171717] shadow-lg mb-10 hover:shadow-darkgreen hover:border-2 hover:border-darkgreen cursor-pointer"
+          class="card lg:card-side bg-white dark:bg-[#171717] shadow-lg mb-10 hover:shadow-darkgreen hover:border-2 hover:border-darkgreen cursor-pointer"
           data-aos="flip-up"
         >
           <figure class="lg:w-1/3">
             <img
-              class="w-full h-full object-fill"
+              class="w-full h-full object-fill border-r-2"
               :src="work.image"
               :alt="work.title + ' logo'"
             />
@@ -46,8 +46,8 @@ const works = computed<Work[]>(() => [
             <h2 class="card-title text-xl md:text-3xl text-green font-mono">
               {{ work.title }}
             </h2>
-            <hr>
-            <p class="text-lg md:text-2xl text-slate-200">
+            <hr class="">
+            <p class="text-lg md:text-2xl text-black dark:text-slate-200">
               {{ work.description }}
             </p>
           </div>
