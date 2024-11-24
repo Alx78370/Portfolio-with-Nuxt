@@ -7,13 +7,13 @@ const toggleTheme = () => {
 </script>
 
 <template>
-  <div class="absolute md:fixed md:right-6 top-[305px] z-10">
+  <div class="absolute top-4 right-16 md:fixed md:right-6 md:top-[305px] z-10">
     <label class="swap swap-rotate" >
       <input type="checkbox" class="theme-controller" @change="toggleTheme" :checked="colorMode.preference === 'dark'" />
 
       <!-- sun icon -->
       <svg
-        class="swap-off h-12 w-12 fill-current"
+        class="swap-off w-8 h-8 md:h-12 md:w-12 fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -24,7 +24,7 @@ const toggleTheme = () => {
 
       <!-- moon icon -->
       <svg
-        class="swap-on h-12 w-12 fill-current"
+        class="swap-on w-8 h-8 md:h-12 md:w-12 fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
