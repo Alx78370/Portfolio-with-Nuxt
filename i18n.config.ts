@@ -52,6 +52,7 @@ export default defineI18nConfig(() => ({
         dev: 'Developped with Nuxt 3',
         ariaLabel: {
             toggleLang: 'Toggle language',
+            toggleTheme: 'Toggle theme',
             scrollToTop: 'Scroll to top',
             scrollToPortfolio: 'Scroll to portfolio',
             scrollToContact: 'Scroll to contact',
@@ -109,6 +110,7 @@ export default defineI18nConfig(() => ({
         dev: 'Développé avec Nuxt 3',
         ariaLabel: {
             toggleLang: 'Changer de langue',
+            toggleTheme: 'Changer de thème',
             scrollToTop: 'Remonter en haut de la page',
             scrollToPortfolio: 'Aller au portfolio',
             scrollToContact: 'Aller au formulaire de contact',

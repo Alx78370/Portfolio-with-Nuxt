@@ -1,18 +1,29 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { locale, setLocale, t } = useI18n();
 const colorMode = useColorMode();
+const isClient = ref(false);
 
 const toggleTheme = () => {
   colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light';
 };
+
+onMounted(() => {
+  isClient.value = true;
+});
 </script>
 
 <template>
   <div class="absolute top-4 right-16 md:fixed md:right-6 md:top-[305px] z-10">
-    <label class="swap swap-rotate" >
+    <label v-if="isClient" class="swap swap-rotate" >
       <input 
         type="checkbox"
+        tabindex="0" 
+        :aria-label="t('ariaLabel.toggleTheme')"
         class="theme-controller" 
-        @change="toggleTheme" 
+        @click="toggleTheme"
+        @keyup.enter="toggleTheme"
         :checked="colorMode.preference === 'dark'" />
 
       <!-- sun icon -->
