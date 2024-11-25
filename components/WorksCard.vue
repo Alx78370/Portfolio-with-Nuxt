@@ -37,7 +37,7 @@ const works = computed<Work[]>(() => [
         >
           <figure class="lg:w-1/3">
             <img
-              class="w-full h-full object-fill"
+              class=" w-full h-full object-fill"
               :src="work.image"
               :alt="work.title + ' logo'"
             />

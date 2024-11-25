@@ -17,7 +17,7 @@ const toggleTheme = () => {
 
       <!-- sun icon -->
       <svg
-        class="swap-off w-8 h-8 md:h-12 md:w-12 fill-current"
+        class="swap-off w-8 h-8 md:h-12 md:w-12 fill-black"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -28,7 +28,7 @@ const toggleTheme = () => {
 
       <!-- moon icon -->
       <svg
-        class="swap-on w-8 h-8 md:h-12 md:w-12 fill-current"
+        class="swap-on w-8 h-8 md:h-12 md:w-12 fill-white"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
