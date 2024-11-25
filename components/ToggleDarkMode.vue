@@ -1,14 +1,9 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
-const isClient = ref(false);
 
 const toggleTheme = () => {
   colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light';
 };
-
-onMounted(() => {
-  isClient.value = true;
-});
 </script>
 
 <template>
@@ -16,7 +11,6 @@ onMounted(() => {
     <label class="swap swap-rotate" >
       <input 
         type="checkbox"
-        v-if="isClient"
         class="theme-controller" 
         @change="toggleTheme" 
         :checked="colorMode.preference === 'dark'" />
