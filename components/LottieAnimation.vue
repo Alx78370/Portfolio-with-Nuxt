@@ -34,6 +34,22 @@ const startAutoplay = () => {
   }
 };
 
+const loadAnimation = () => {
+  if (animationInstance) {
+    animationInstance.destroy();
+  }
+
+  if (animationContainer.value) {
+    animationInstance = lottie.loadAnimation({
+      container: animationContainer.value,
+      renderer: "svg",
+      loop: props.loop,
+      autoplay: props.autoplay,
+      path: props.animationPath,
+    });
+  }
+};
+
 onMounted(() => {
   if (animationContainer.value) {
     animationInstance = lottie.loadAnimation({
@@ -48,6 +64,13 @@ onMounted(() => {
     animationContainer.value.addEventListener("mouseleave", startAutoplay);
   }
 });
+
+watch(
+  () => props.animationPath,
+  () => {
+    loadAnimation();
+  }
+);
 
 onBeforeUnmount(() => {
   if (animationInstance) {

@@ -6,11 +6,20 @@ import { useI18n } from "vue-i18n";
 import { useNavigation } from "~/composables/useNavigation";
 
 const { t } = useI18n();
+const isClient = ref(false);
 const { focusedLink, scrollTo, setFocus, startListening, stopListening } =
   useNavigation(["about", "works", "contact"]);
+const colorMode = useColorMode();
+
+const animationPath = computed(() =>
+  colorMode.preference === "light"
+    ? "/lottieAnimations/dark-arrow-down.json"
+    : "/lottieAnimations/arrow-down.json"
+);
 
 onMounted(() => {
   startListening();
+  isClient.value = true;
 });
 
 onUnmounted(() => {
@@ -37,9 +46,10 @@ onUnmounted(() => {
       class="hidden md:flex justify-center items-center group absolute inset-x-0 bottom-0"
     >
       <LottieAnimation
+        v-if="isClient"
         tabindex="0"
         :aria-label="t('ariaLabel.scrollToPortfolio')"
-        animationPath="/lottieAnimations/arrow-down.json"
+        :animationPath="animationPath"
         :loop="true"
         :autoplay="true"
         class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
@@ -73,9 +83,10 @@ onUnmounted(() => {
       class="hidden md:flex justify-center items-center group absolute inset-x-0 bottom-0"
     >
       <LottieAnimation
+        v-if="isClient"
         tabindex="0"
         :aria-label="t('ariaLabel.scrollToContact')"
-        animationPath="/lottieAnimations/arrow-down.json"
+        :animationPath="animationPath"
         :loop="true"
         :autoplay="true"
         class="w-32 cursor-pointer transition-transform duration-100 group-hover:scale-125"
@@ -116,9 +127,10 @@ onUnmounted(() => {
     class="hidden md:flex md:justify-center md:items-center group md:absolute md:right-0 md:bottom-0 md:rotate-180 md:box-content"
   >
     <LottieAnimation
+      v-if="isClient"
       tabindex="0"
       :aria-label="t('ariaLabel.scrollToTop')"
-      animationPath="/lottieAnimations/arrow-down.json"
+      :animationPath="animationPath"
       :loop="true"
       :autoplay="true"
       class="cursor-pointer transition-transform duration-100 group-hover:scale-125"
