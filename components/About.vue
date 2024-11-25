@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+import { useNavigation } from "~/composables/useNavigation";
 
 const { t } = useI18n();
+const { focusedLink, scrollTo, setFocus, startListening, stopListening } =
+  useNavigation(["about", "works", "contact"]);
 </script>
 
 <template>
@@ -40,6 +43,18 @@ const { t } = useI18n();
           <a
             href="#contact"
             class="text-green md:text-2xl cursor-pointer underline underline-offset-2 hover:text-darkgreen"
+            @click.prevent="
+          () => {
+            scrollTo('#contact');
+            setFocus('#contact');
+          }
+          "
+          @keyup.enter="
+            () => {
+              scrollTo('#contact');
+              setFocus('#contact');
+            }
+          "
           >
             {{ t("contactLink") }}
           </a>
