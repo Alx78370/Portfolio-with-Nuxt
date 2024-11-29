@@ -8,7 +8,10 @@ const { t } = useI18n();
   <div class="flex flex-col items-center justify-center h-screen">
     <h1 class="text-4xl font-bold">{{ t("underConstruction.title") }}</h1>
     <p class="text-lg mt-4">{{ t("underConstruction.message") }}</p>
-    <NuxtLink to="/" class="underline text-white mt-16">
+    <NuxtLink
+      to="https://alexis-vachet.dev/#works"
+      class="underline text-white mt-16"
+    >
       {{ t("underConstruction.backToPortfolio") }}
     </NuxtLink>
   </div>
