@@ -15,6 +15,7 @@ async function sendMail(formData: Message) {
   const { email, subject, message } = formData;
   try {
     await mail.send({
+      from: email,
       to: import.meta.env.NUXT_MAIL_TO,
       replyTo: email,
       subject: subject,
