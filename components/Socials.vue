@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
+import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 </script>
@@ -7,7 +7,7 @@ const { t } = useI18n();
 <template>
   <div class="flex justify-center items-center gap-10">
     <NuxtLink
-      to="https://www.linkedin.com/in/alexis-vachet-9b5048b0/"
+      to="https://www.linkedin.com/in/alexis-vachet/"
       :aria-label="t('ariaLabel.linkedin')"
       target="_blank"
     >
