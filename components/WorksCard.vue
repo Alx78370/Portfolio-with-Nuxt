@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import AurheaLogo from "../assets/images/Aurhea-logo.webp";
-import TechandCoLogo from "../assets/images/TechandCo-logo.webp";
-import DBdecorationLogo from "../assets/images/DB-decoration-logo.webp";
+import sacourtage from "../assets/images/SA-courtage.webp";
+import vuejsparis from "../assets/images/Vuejs_Paris.webp";
 import { useI18n } from "vue-i18n";
 import type { Work } from "~/types/Work";
 
 const { t } = useI18n();
 const works = computed<Work[]>(() => [
   {
+    title: "Vue.js Paris",
+    description: t("works.vuejsparis.description"),
+    image: vuejsparis,
+    link: "https://vuejsparis.netlify.app/",
+  },
+  {
+    title: "SA Courtage",
+    description: t("works.sacourtage.description"),
+    image: sacourtage,
+    link: "http://www.sa-couratge.com",
+  },
+  {
     title: "Aurhea",
     description: t("works.aurhea.description"),
     image: AurheaLogo,
-    link: "http://www.alexis-vachet.dev/under-construction",
-  },
-  {
-    title: "Tech&Co",
-    description: t("works.techandco.description"),
-    image: TechandCoLogo,
-    link: "https://techandco.netlify.app/",
-  },
-  {
-    title: "DB decoration",
-    description: t("works.dbdecoration.description"),
-    image: DBdecorationLogo,
     link: "http://www.alexis-vachet.dev/under-construction",
   },
 ]);
@@ -30,24 +30,17 @@ const works = computed<Work[]>(() => [
 <template>
   <div class="md:pb-14">
     <div v-for="(work, index) in works" :key="index" class="xl:px-32">
-      <NuxtLink
-        :to="work.link"
-        :target="
-          work.link !== 'http://www.alexis-vachet.dev/under-construction'
-            ? '_blank'
-            : null
-        "
-      >
+      <NuxtLink :to="work.link" :target="work.link !== 'http://www.alexis-vachet.dev/under-construction'
+        ? '_blank'
+        : null
+        ">
         <article
-          class="card lg:card-side bg-white dark:bg-[#171717] shadow-lg mb-10 hover:shadow-darkgreen hover:border-2 hover:border-darkgreen cursor-pointer"
-          data-aos="flip-up"
-        >
+          class="group card lg:card-side bg-white dark:bg-[#171717] shadow-lg mb-10  border-2 border-slate-900 cursor-pointer md:min-h-56"
+          data-aos="flip-up">
           <figure class="lg:w-1/3">
             <img
-              class="w-full h-full object-fill"
-              :src="work.image"
-              :alt="work.title + ' logo'"
-            />
+              class="w-full h-full object-fill group-hover:scale-105 overflow-hidden group-hover:duration-300 group-hover:ease-in-out"
+              :src="work.image" :alt="work.title + ' logo'" />
           </figure>
           <div class="card-body lg:w-2/3 lg:px-24">
             <h2 class="card-title text-xl md:text-3xl text-green font-mono">

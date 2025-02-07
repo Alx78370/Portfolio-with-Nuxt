@@ -31,13 +31,13 @@ export default defineI18nConfig(() => ({
           description:
             "Dating site developed using Angular and Symfony. Still under development.",
         },
-        techandco: {
+        vuejsparis: {
           description:
-            "Tech blog (contains fake posts for now) developed using Vite and VueJS.",
+            "Community site for VueJS developers. Developed with Nuxt and VueJS.",
         },
-        dbdecoration: {
+        sacourtage: {
           description:
-            "Showcase website for a craftsman/painter developed with WordPress.",
+            "Showcase website for a real estate and insurance broker. Developed with Nuxt and VueJS.",
         },
       },
       questions:
@@ -94,13 +94,13 @@ export default defineI18nConfig(() => ({
           description:
             "Site de rencontres développé avec Angular et Symfony. Toujours en cours de développement.",
         },
-        techandco: {
+        vuejsparis: {
           description:
-            "Blog tech (contient pour l'instant des articles fictifs) développé avec Vite et VueJS.",
+            "Site communautaire pour les développeurs VueJS. Développé avec Nuxt et VueJS.",
         },
-        dbdecoration: {
+        sacourtage: {
           description:
-            "Site vitrine pour un artisan/peintre développé avec WordPress.",
+            "Site vitrine pour un courtier en immobilier et assurance. Développé avec Nuxt et VueJS.",
         },
       },
       questions:
