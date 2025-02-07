@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AurheaLogo from "../assets/images/Aurhea-logo.webp";
-import sacourtage from "../assets/images/SA-courtage.webp";
+import sacourtage from "../assets/images/SA-Courtage.webp";
 import vuejsparis from "../assets/images/Vuejs_Paris.webp";
 import { useI18n } from "vue-i18n";
 import type { Work } from "~/types/Work";
